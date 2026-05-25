@@ -1,262 +1,133 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Fruit Adventure - UNAD</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Fuente Gamer -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-    <!-- ========================= -->
-    <!-- MENÚ DE NAVEGACIÓN -->
-    <!-- ========================= -->
-
-    <header>
-
-        <div class="logo">
-            <img src="imagenes/logo.png" alt="Logo del videojuego">
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity Web Player | Fruit Adventure</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+  </head>
+  <body>
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
         </div>
-
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre">Sobre el Juego</a></li>
-                <li><a href="#gameplay">Gameplay</a></li>
-                <li><a href="#personajes">Personajes</a></li>
-                <li><a href="#lore">Lore</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#demo">Demo</a></li>
-                <li><a href="#creditos">Créditos</a></li>
-            </ul>
-        </nav>
-
-    </header>
-
-
-    <!-- ========================= -->
-    <!-- PORTADA -->
-    <!-- ========================= -->
-
-    <section id="inicio" class="hero">
-
-        <div class="hero-content">
-
-            <h1>Fruit Adventure</h1>
-
-            <p>
-                Explora un mundo lleno de misterios, aventura y desafíos.
-            </p>
-
-            <a href="#demo" class="btn">Jugar Demo</a>
-
-        </div>
-
-    </section>
-
-
-    <!-- ========================= -->
-    <!-- SOBRE EL JUEGO -->
-    <!-- ========================= -->
-
-    <section id="sobre" class="seccion">
-
-        <h2>Sobre el Juego</h2>
-
-        <p>
-            Este videojuego ofrece una experiencia interactiva basada en la exploración,
-            la aventura y la narrativa. El jugador deberá recolectar todas las frutas, esquivar a los enemigos 
-            y superar cada desafio.
-        </p>
-
-    </section>
-
-
-    <!-- ========================= -->
-    <!-- GAMEPLAY -->
-    <!-- ========================= -->
-
-    <section id="gameplay" class="seccion">
-
-        <h2>Gameplay</h2>
-
-        <div class="gameplay-contenedor">
-
-            <div class="gameplay-texto">
-
-                <p>
-                    El jugador podrá explorar escenarios, interactuar con objetos,
-                    superar obstáculos y avanzar cada nivel.
-                </p>
-
-                <ul>
-                    <li>Exploración interactiva</li>
-                    <li>Mecánicas dinámicas</li>
-                    <li>Movimiento fluido</li>
-                    <li>Desafíos y recolección</li>
-                </ul>
-
-            </div>
-
-            <div class="gameplay-imagen">
-
-                <img src="imagenes/gameplay.png" alt="Gameplay del videojuego">
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ========================= -->
-    <!-- PERSONAJES -->
-    <!-- ========================= -->
-
-    <section id="personajes" class="seccion">
-
-        <h2>Personajes</h2>
-
-        <div class="cards">
-
-            <!-- PERSONAJE 1 -->
-
-            <div class="card">
-
-                <img src="imagenes/personaje1.png" alt="Personaje 1">
-
-                <h3>Personaje 1</h3>
-
-                <p>
-                    Un pequeño aventurero pixelado que ama recolectar frutas
-                    mágicas mientras explora mundos llenos de desafíos, 
-                    secretos y diversión.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ========================= -->
-    <!-- LORE -->
-    <!-- ========================= -->
-
-    <section id="lore" class="seccion">
-
-        <h2>Mundo y Lore</h2>
-
-        <p>
-            El videojuego se desarrolla en un universo lleno de aventuras,
-            criaturas y escenarios únicos. Cada zona cuenta con un reto diferente.
-        </p>
-
-        <img src="imagenes/mapa.png" alt="Mapa del videojuego" class="mapa">
-
-    </section>
-
-
-    <!-- ========================= -->
-    <!-- GALERÍA -->
-    <!-- ========================= -->
-
-    <section id="galeria" class="seccion">
-
-        <h2>Galería Multimedia</h2>
-
-        <div class="galeria">
-
-            <img src="imagenes/galeria1.png" alt="">
-            <img src="imagenes/galeria2.png" alt="">
-
-        </div>
-
-    </section>
-
-
-    <!-- ========================= -->
-    <!-- VIDEO -->
-    <!-- ========================= -->
-
-    <section class="seccion video">
-
-        <h2>Trailer / Gameplay</h2>
-
-        <iframe 
-            src="https://www.youtube.com/embed/B1akylrcHh8"
-            width="100%" 
-            height="500">
-        </iframe>
-
-    </section>
-
-
-    <!-- ========================= -->
-    <!-- DEMO -->
-    <!-- ========================= -->
-
-    <section id="demo" class="seccion demo">
-
-        <h2>Demo Jugable</h2>
-
-        <p>
-            Haz clic en el siguiente botón para acceder a la demo del videojuego.
-        </p>
-
-        <a href="https://github.io" target="_blank" class="btn">
-            Abrir Demo
-        </a>
-
-    </section>
-
-
-    <!-- ========================= -->
-    <!-- CRÉDITOS -->
-    <!-- ========================= -->
-
-    <section id="creditos" class="seccion">
-
-        <h2>Créditos</h2>
-
-        <div class="creditos">
-
-            <p><strong>Diseño:</strong> Valery Quiroga</p>
-
-            <p><strong>Programación:</strong> Valery Quiroga</p>
-
-            <p><strong>Narrativa:</strong> Valery Quiroga</p>
-
-            <p><strong>Universidad:</strong> UNAD</p>
-
-        </div>
-
-    </section>
-
-
-    <!-- ========================= -->
-    <!-- FOOTER -->
-    <!-- ========================= -->
-
-    <footer>
-
-        <p>
-            © 2026 - Proyecto Diseño Interactivo | UNAD
-        </p>
-
-    </footer>
-
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-
-</body>
+      </div>
+      <div id="unity-warning"> </div>
+      <div id="unity-footer">
+        <div id="unity-logo-title-footer"></div>
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">Fruit Adventure</div>
+      </div>
+    </div>
+    <script>
+      var canvas = document.querySelector("#unity-canvas");
+
+      // Shows a temporary message banner/ribbon for a few seconds, or
+      // a permanent error message on top of the canvas if type=='error'.
+      // If type=='warning', a yellow highlight color is used.
+      // Modify or remove this function to customize the visually presented
+      // way that non-critical warnings and error messages are presented to the
+      // user.
+      function unityShowBanner(msg, type) {
+        var warningBanner = document.querySelector("#unity-warning");
+        function updateBannerVisibility() {
+          warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+        }
+        var div = document.createElement('div');
+        div.innerHTML = msg;
+        warningBanner.appendChild(div);
+        if (type == 'error') div.style = 'background: red; padding: 10px;';
+        else {
+          if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+          setTimeout(function() {
+            warningBanner.removeChild(div);
+            updateBannerVisibility();
+          }, 5000);
+        }
+        updateBannerVisibility();
+      }
+
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/juegoweb.loader.js";
+      var config = {
+        arguments: [],
+        dataUrl: buildUrl + "/juegoweb.data",
+        frameworkUrl: buildUrl + "/juegoweb.framework.js",
+        codeUrl: buildUrl + "/juegoweb.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Fruit Adventure",
+        productVersion: "1.0",
+        showBanner: unityShowBanner,
+        // errorHandler: function(err, url, line) {
+        //    alert("error " + err + " occurred at line " + line);
+        //    // Return 'true' if you handled this error and don't want Unity
+        //    // to process it further, 'false' otherwise.
+        //    return true;
+        // },
+      };
+
+      // By default, Unity keeps WebGL canvas render target size matched with
+      // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+      // Set this to false if you want to decouple this synchronization from
+      // happening inside the engine, and you would instead like to size up
+      // the canvas DOM size and WebGL render target sizes yourself.
+      // config.matchWebGLToCanvasSize = false;
+
+      // If you would like all file writes inside Unity Application.persistentDataPath
+      // directory to automatically persist so that the contents are remembered when
+      // the user revisits the site the next time, uncomment the following line:
+      // config.autoSyncPersistentDataPath = true;
+      // This autosyncing is currently not the default behavior to avoid regressing
+      // existing user projects that might rely on the earlier manual
+      // JS_FileSystem_Sync() behavior, but in future Unity version, this will be
+      // expected to change.
+
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+        document.querySelector("#unity-container").className = "unity-mobile";
+        canvas.className = "unity-mobile";
+
+        // To lower canvas resolution on mobile devices to gain some
+        // performance, uncomment the following line:
+        // config.devicePixelRatio = 1;
+
+
+      } else {
+        // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
+      }
+
+      document.querySelector("#unity-loading-bar").style.display = "block";
+
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
+              }).then((unityInstance) => {
+                document.querySelector("#unity-loading-bar").style.display = "none";
+                document.querySelector("#unity-fullscreen-button").onclick = () => {
+                  unityInstance.SetFullscreen(1);
+                };
+
+              }).catch((message) => {
+                alert(message);
+              });
+            };
+
+      document.body.appendChild(script);
+
+    </script>
+  </body>
 </html>
